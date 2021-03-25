@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eurekaserver    # Application Server Name
+
+server:
+  port: 8761
+eureka:
+  client:
+    registerWithEureka: false # With this server does not attempt to register itself. Else you get lot of error on the console
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
